@@ -30,9 +30,16 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/productView', [ProductController::class, 'ProductView'])->name('productView');
     Route::post('/add-to-cart', [ProductController::class, 'addToCart'])->name('add-to-cart');
     Route::get('/cart', [ProductController::class, 'cartView'])->name('admin.cart');
-    
+    Route::post('/update-cart-quantity', [ProductController::class, 'updateQuantity'])->name('update-cart-quantity');
+
     Route::post('/remove-cart', [ProductController::class, 'removeItem']);
 
 
+
+    Route::get('/checkout', [ProductController::class, 'indexcheckout'])->name('checkout');
+    Route::post('/place-order', [ProductController::class, 'placeOrder'])->name('place.order');
+
+    Route::get('/order-success', function () {
+        return view('Admin.Thankyou');  })->name('order.success');
 
 });

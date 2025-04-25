@@ -19,7 +19,7 @@
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title">{{$product->name}}</h5>
+                                <h5 class="card-title">{{$product->product_name}}</h5>
                                 <p class="card-text">{{$product->description }}</p> 
                                 <p><span>Price:</span> ₹{{$product->price}}</p>
                                 <p><span>Discount:</span> {{$product->discount}}%</p>
