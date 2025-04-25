@@ -14,7 +14,8 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <!-- endinject -->
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
   <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
 </head>
 
@@ -55,7 +56,19 @@
     <!-- Page content -->
     <div class="container-fluid page-body-wrapper">
       <!-- Navbar -->
-      @include('Admin.layouts.head')
+
+
+
+      <!-- 
+      
+      @include('Admin.layouts.head') 
+      
+      
+      
+      -->
+
+
+
 
       <!-- Main content -->
       <div class="main-panel">
